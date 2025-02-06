@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, ReactiveFormsModule]
+  imports: [IonicModuleodule, CommonModule, ReactiveFormsModule]
 })
 export class LoginPage {
   loginForm: FormGroup;
