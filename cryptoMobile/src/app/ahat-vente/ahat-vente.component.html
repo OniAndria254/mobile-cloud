@@ -1,0 +1,26 @@
+
+
+<ion-list>
+  <ion-item>
+
+    <ion-select name="" label="Default label" placeholder="SELECT CRYPTO" [(ngModel)]="selectedCrypto" interface="popover">
+      <ion-select-option *ngFor="let item of data" [value]="item.id">
+        {{ item.name }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="quantite" [(ngModel)]="quantite"></ion-input>
+  </ion-item>
+</ion-list>
+
+
+<div *ngIf="data && data.length">
+  <p *ngFor="let item of data">
+    {{ item.name }}
+  </p>
+</div>
+
+<ion-button (click)="recupererDonnees()">Acheter</ion-button>
+

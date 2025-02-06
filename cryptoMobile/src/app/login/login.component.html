@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="container">
+    <h2>Se connecter</h2>
+    <p>Entrez votre email et mot de passe pour vous connecter</p>
+
+    <form (submit)="login()">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mot de passe</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-toggle [(ngModel)]="rememberMe" name="rememberMe"></ion-toggle>
+        <ion-label>Se souvenir de moi</ion-label>
+      </ion-item>
+
+      <ion-button expand="full" type="submit" color="primary">Se connecter</ion-button>
+    </form>
+
+    <p class="register-link">
+      Vous n'avez pas de compte ? <a (click)="goToRegister()">S'inscrire</a>
+    </p>
+  </div>
+
+  <div class="quote-section">
+    <h3>"L'attention est la nouvelle monnaie"</h3>
+    <p>Plus l'écriture semble sans effort, plus l'écrivain a mis d'effort dans le processus.</p>
+  </div>
+</ion-content>
