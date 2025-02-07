@@ -1,0 +1,78 @@
+<!-- Menu latéral -->
+<ion-menu contentId="main-content" type="reveal">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle autoHide="false">
+        <ion-item routerLink="/transaction">
+          <ion-icon name="cash-outline" slot="start"></ion-icon>
+          <ion-label>Transaction</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle autoHide="false">
+        <ion-item routerLink="/market">
+          <ion-icon name="stats-chart-outline" slot="start"></ion-icon>
+          <ion-label>Market</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle autoHide="false">
+        <ion-item routerLink="/wallet">
+          <ion-icon name="wallet-outline" slot="start"></ion-icon>
+          <ion-label>Portefeuille</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle autoHide="false">
+        <ion-item routerLink="/historique">
+          <ion-icon name="time-outline" slot="start"></ion-icon>
+          <ion-label>Historiques</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Contenu principal -->
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <!-- Bouton du menu à gauche -->
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+      <ion-title>Accueil</ion-title>
+
+      <!-- Icônes à droite : profil et notifications -->
+      <ion-buttons slot="end">
+        <!-- Bouton de notifications -->
+        <ion-button>
+          <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+        </ion-button>
+        <!-- Bouton de profil -->
+        <ion-button>
+          <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Contenu principal -->
+  <ion-content class="ion-padding">
+    <div class="container">
+      <h2>Bienvenue sur l'accueil</h2>
+      <p>Choisissez une option dans le menu pour naviguer dans l'application.</p>
+    </div>
+  </ion-content>
+
+
+  <ion-content class="ion-padding">
+    <div class="container">
+      <h2>Bienvenue sur l'accueil</h2>
+      <p>Choisissez une option dans le menu pour naviguer dans l'application.</p>
+    </div>
+  </ion-content>
+</div>
